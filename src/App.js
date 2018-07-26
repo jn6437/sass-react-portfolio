@@ -7,14 +7,13 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <body id="bg-img">
-        <div class="overlay" />
+      <div>
         <header>
           <MenuButton />
           <Menu />
         </header>
         <Home />
-      </body>
+      </div>
     );
   }
 }
