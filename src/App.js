@@ -1,24 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import MenuButton from "./component/menu_button";
+import Menu from "./component/menu";
+import Home from "./component/home";
+import "./App.css";
 
 class App extends Component {
   render() {
-    return ( 
-      <div>
-        <div className="union">
-        hello world
-        </div>
-        <div className="union2">
-        Hello world
-        </div>
-      </div>
+    return (
+      <body id="bg-img">
+        <div class="overlay" />
+        <header>
+          <MenuButton />
+          <Menu />
+        </header>
+        <Home />
+      </body>
     );
   }
 }
-/*
-.welcome {
-  color:red;
-}
-*/
+
 export default App;
