@@ -1,8 +1,8 @@
 import React from "react";
 
-const Menu = () => {
+const Menu = (props) => {
   return (
-    <nav className="menu">
+    <nav className={props.menuStatus ? "menu" : "menu close"}>
       <div className="menu-branding">
         <div className="portrait" />
       </div>

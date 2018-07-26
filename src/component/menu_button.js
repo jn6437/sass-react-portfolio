@@ -1,8 +1,8 @@
 import React from "react";
 
-const MenuButton = () => {
+const MenuButton = (props) => {
   return (
-    <div className="menu-btn">
+    <div className="menu-btn" onClick={props.onMenuClick}>
       <div className="btn-line" />
       <div className="btn-line" />
       <div className="btn-line" />
