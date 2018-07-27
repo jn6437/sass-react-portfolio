@@ -36,7 +36,7 @@
     float: left;
     width: 50%;
     height: 100vh;
-    overflow: hidden; }
+    overflow: scroll; }
   .menu-nav {
     margin: 0;
     padding: 0;
@@ -64,13 +64,16 @@
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
-    .menu .nav-item.current > a {
-      color: #eece1a; }
+    .menu .nav-item.current {
+      font-size: 30px;
+      padding-bottom: 20px;
+      color: #eece1a;
+      text-transform: uppercase; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
-    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
     padding: 1rem 0;
     font-weight: 300;
     color: #000;
@@ -78,6 +81,27 @@
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
       color: #eece1a; }
+    .menu .nav-link .project1 {
+      align-content: center;
+      width: 380px;
+      height: 100px;
+      background: url("../img/project1.png");
+      background-size: cover;
+      border: solid 3px #eece1a; }
+    .menu .nav-link .project2 {
+      align-content: center;
+      width: 380px;
+      height: 100px;
+      background: url("../img/project2.png");
+      background-size: cover;
+      border: solid 3px #eece1a; }
+    .menu .nav-link .project3 {
+      align-content: center;
+      width: 380px;
+      height: 100px;
+      background: url("../img/project3.jpg");
+      background-size: cover;
+      border: solid 3px #eece1a; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -121,7 +145,33 @@
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+  /*
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+  }*/ }
 
 html {
   font-size: 10px; }

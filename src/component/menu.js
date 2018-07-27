@@ -1,23 +1,6 @@
 import React from "react";
 
 const Menu = props => {
-  const NavItem = props.navList.map(nav => {
-    return (
-      <li key={nav} className={props.menuStatus ? "nav-item" : "nav-item show"}>
-
-        <a href={`/${nav}`} className="nav-link">
-          {nav}
-        </a>
-
-        {/*}
-        <Link to={`/${nav}`}>
-          {nav}
-        </Link>
-        */}
-
-      </li>
-    );
-  });
 
   return (
     <nav className={props.menuStatus ? "menu" : "menu show"}>
@@ -28,29 +11,27 @@ const Menu = props => {
       </div>
 
       <ul className={props.menuStatus ? "menu-nav" : "menu-nav show"}>
-        {NavItem}
-        {/*
-        <li className="nav-item">
+        <li className={props.menuStatus ? "nav-item" : "nav-item show current"}>
+          Projects
+        </li>
+        <li className={props.menuStatus ? "nav-item" : "nav-item show"}>
           <a href="/" className="nav-link">
-            Home
+            <div className="project1" />
+            Water Quality Analysis Tool
           </a>
         </li>
-        <li className="nav-item">
-          <a href="/about.html" className="nav-link">
-            About
+        <li className={props.menuStatus ? "nav-item" : "nav-item show"}>
+          <a href="/" className="nav-link">
+            <div className="project2" />
+            Coaster - A Java Game
           </a>
         </li>
-        <li className="nav-item">
+        <li className={props.menuStatus ? "nav-item" : "nav-item show"}>
           <a href="/projects.html" className="nav-link">
-            Projects
+            <div className="project3" />
+            PolyWar - Unity based Mobile Game
           </a>
         </li>
-        <li className="nav-item">
-          <a href="/contact.html" className="nav-link">
-            Contact
-          </a>
-        </li>
-         */}
       </ul>
     </nav >
   );

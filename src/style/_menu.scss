@@ -57,7 +57,7 @@
     float: left;
     width: 50%;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
   }
 
   &-nav {
@@ -101,16 +101,20 @@
     }
 
     //a link inside current
-    &.current > a {
+    &.current {
+      font-size: 30px;
+      padding-bottom: 20px;
       color: $secondary-color;
+      text-transform: uppercase;
     }
   }
 
   .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
-    text-transform: uppercase;
+    font-size: 15px;
+    //text-transform: uppercase;
+    text-align: center;
     padding: 1rem 0;
     font-weight: 300;
     color: set-text-color($primary-color);
@@ -120,12 +124,40 @@
     &:hover {
       color: $secondary-color;
     }
+    .project1
+    {
+        align-content: center;
+        width: 380px;
+        height: 100px;
+        background: url("../img/project1.png");
+        background-size:cover;
+        border: solid 3px $secondary-color;
+    }
+    .project2
+    {
+        align-content: center;
+        width: 380px;
+        height: 100px;
+        background: url("../img/project2.png");
+        background-size:cover;
+        border: solid 3px $secondary-color;
+    }
+    .project3
+    {
+        align-content: center;
+        width: 380px;
+        height: 100px;
+        background: url("../img/project3.jpg");
+        background-size:cover;
+        border: solid 3px $secondary-color;
+    }
   }
 }
 
 //Delay each nav item by 0.1s
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
+      
     transition-delay: $x * 0.1s;
   }
 }

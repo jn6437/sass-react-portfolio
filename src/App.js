@@ -24,7 +24,6 @@ class App extends Component {
           />
           <Menu
             menuStatus={this.state.showMenu}
-            navList={["Home", "About", "Projects", "Contact"]}
           />
         </header>
         <Home />
