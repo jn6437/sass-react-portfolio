@@ -12,14 +12,20 @@ class App extends Component {
 
   toggleMenu = () => {
     this.setState({ showMenu: !this.state.showMenu });
-  }
+  };
 
   render() {
     return (
       <div>
         <header>
-          <MenuButton onMenuClick={this.toggleMenu} />
-          <Menu menuStatus={this.state.showMenu} />
+          <MenuButton
+            menuStatus={this.state.showMenu}
+            onMenuClick={this.toggleMenu}
+          />
+          <Menu
+            menuStatus={this.state.showMenu}
+            navList={["Home", "About", "Projects", "Contact"]}
+          />
         </header>
         <Home />
       </div>

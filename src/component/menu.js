@@ -1,12 +1,27 @@
 import React from "react";
 
-const Menu = (props) => {
+const Menu = props => {
+  const NavItem = props.navList.map(nav => {
+    return (
+      <li key={nav} className={props.menuStatus ? "nav-item" : "nav-item show"}>
+        <a href="/.html" className="nav-link">
+          {nav}
+        </a>
+      </li>
+    );
+  });
+
   return (
-    <nav className={props.menuStatus ? "menu" : "menu close"}>
-      <div className="menu-branding">
+    <nav className={props.menuStatus ? "menu" : "menu show"}>
+      <div
+        className={props.menuStatus ? "menu-branding" : "menu-branding show"}
+      >
         <div className="portrait" />
       </div>
-      <ul className="menu-nav">
+
+      <ul className={props.menuStatus ? "menu-nav" : "menu-nav show"}>
+        {NavItem}
+        {/*
         <li className="nav-item">
           <a href="/" className="nav-link">
             Home
@@ -14,19 +29,20 @@ const Menu = (props) => {
         </li>
         <li className="nav-item">
           <a href="/about.html" className="nav-link">
-            About me
+            About
           </a>
         </li>
         <li className="nav-item">
-          <a href="/work.html" className="nav-link">
-            My Work
+          <a href="/projects.html" className="nav-link">
+            Projects
           </a>
         </li>
         <li className="nav-item">
           <a href="/contact.html" className="nav-link">
-            How To Reach Me
+            Contact
           </a>
         </li>
+         */}
       </ul>
     </nav>
   );
