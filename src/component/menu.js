@@ -4,9 +4,17 @@ const Menu = props => {
   const NavItem = props.navList.map(nav => {
     return (
       <li key={nav} className={props.menuStatus ? "nav-item" : "nav-item show"}>
-        <a href="/.html" className="nav-link">
+
+        <a href={`/${nav}`} className="nav-link">
           {nav}
         </a>
+
+        {/*}
+        <Link to={`/${nav}`}>
+          {nav}
+        </Link>
+        */}
+
       </li>
     );
   });
@@ -44,7 +52,7 @@ const Menu = props => {
         </li>
          */}
       </ul>
-    </nav>
+    </nav >
   );
 };
 
