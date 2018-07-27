@@ -3,8 +3,8 @@
 @import "mobile";
 
 html {
-  font-size: 10px;
-}
+  font-size: 15px;
+} 
 
 * {
   box-sizing: border-box;
@@ -54,6 +54,8 @@ header {
 }
 
 main {
+  align-items: center;
+  text-align: center;
   padding: 4rem;
 
   .icons {

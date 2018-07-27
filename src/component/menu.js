@@ -15,21 +15,21 @@ const Menu = props => {
           Projects
         </li>
         <li className={props.menuStatus ? "nav-item" : "nav-item show"}>
-          <a href="/" className="nav-link">
-            <div className="project1" />
+          <a href="https://deco3801-nacltea.uqcloud.net/" className="nav-link">
+            {/*<div className="project1" />*/}
             Water Quality Analysis Tool
           </a>
         </li>
         <li className={props.menuStatus ? "nav-item" : "nav-item show"}>
-          <a href="/" className="nav-link">
-            <div className="project2" />
-            Coaster - A Java Game
+          <a href="https://github.com/UQdeco2800/coaster" className="nav-link">
+            {/*<div className="project1" />*/}
+            Open Source Java Game
           </a>
         </li>
         <li className={props.menuStatus ? "nav-item" : "nav-item show"}>
-          <a href="/projects.html" className="nav-link">
-            <div className="project3" />
-            PolyWar - Unity based Mobile Game
+          <a href="https://github.com/jn6437/POLYWAR" className="nav-link">
+            {/*<div className="project1" />*/}
+            Unity based Mobile Game
           </a>
         </li>
       </ul>

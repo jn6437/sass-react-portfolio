@@ -1,5 +1,5 @@
 $primary-color: #fff;
-$secondary-color: #eece1a;
+$secondary-color: #1675e0;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $background-opacity: 0.9;
@@ -38,6 +38,7 @@ $background-opacity: 0.9;
     @return #fff;
   }
 }
+
 
 //medua Query Mixins
 @mixin mediaSm {
